@@ -1,11 +1,24 @@
-nav {
-  display: grid;
-  grid-template-columns: 15% auto 15%;
-  text-align: center;
-  padding: 30px;
-  background-color: grey;
+* {
+  padding: 0;
+  margin: 0;
 }
-nav a {
-  text-decoration: none;
-  color: white;
+
+.pic {
+  width: 10%;
+  margin: -80px 10px;
+}
+
+.carousel-inner {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.row {
+  text-align: center;
+  padding-top: 10px;
+}
+.row p {
+  width: 80%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
