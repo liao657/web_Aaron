@@ -1,0 +1,11 @@
+nav {
+  display: grid;
+  grid-template-columns: 15% auto 15%;
+  text-align: center;
+  padding: 30px;
+  background-color: grey;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
