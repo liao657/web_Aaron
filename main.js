@@ -12,8 +12,13 @@ $("#service").slick({
     autoplayspeed:1.5,
     slidesToShow:3,
 })
-$('.carousel').carousel({
-    interval: 2000,
+$('#carousel').slick({
     autoplay:true,
-    autoplayspeed:1.5,
+    infinite: true,
+  speed: 1000,
+  slidesToShow: 3,
+  adaptiveHeight: true
   })
+  
+  
+  

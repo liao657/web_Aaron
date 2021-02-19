@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel=stylesheet href="個人網站.scss">
+    <link rel=stylesheet href="個人網站.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ed608385d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+    
+
+    <input type="checkbox" id="menu_control">
+    <label for="menu_control" class="menu_btn">
+        <span>選單</span>
+    </label>
+    <div class="side-menu">
+
+
+
+        <img src="頭貼4-04.png">
+        <form>
+            <input type="search">
+            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        <nav>
+            <a href="#">01</a>
+        <a href="#">02 Why me?</a>
+        <a href="#">03 What can i do?</a>
+        <a href="#">04 Project</a>
+       
+    </nav>
+    </div>
+</body>
+</html>
