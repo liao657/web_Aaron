@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+}
+nav{
+    background-color: black;
+    height: 20vh;
+    width: 100%;
+    position: fixed;
+    position: relative;
+    
+    a{
+        padding: 30px;
+        text-decoration: none;
+        color: blanchedalmond;
+        font-size: 28px;
+        display: inline-block;
+    }
+}
+.row{
+    position: absolute;
+    width: 100%;
+}
+section{
+    height: 100vh;
+    color: rgb(212, 100, 48);
+    text-align: center;
+    font-size: 28px;
+    
+    line-height: 100vh;
+    &:nth-of-type(odd){
+        background: cornflowerblue;
+    }
+    &:nth-of-type(even){
+        background: rgb(231, 113, 113);
+    }
+}

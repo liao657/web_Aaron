@@ -4,6 +4,12 @@
     cursor: alias;
     
 }
+body{
+    height: 10000px;
+}
+$primary: #81BA92   ;
+$dark: white;
+
 .cursor-dot-outline{
     width: 40px;
     height: 40px;
@@ -15,6 +21,7 @@
 }
 html,body{
     height: 100%;
+    transition-delay:  10s;
 }
 @media screen and(min-width:768px){
 body{
@@ -35,12 +42,41 @@ body{
 //         margin: auto;
 //     }
 // }
+.content{
+    color: #81BA92;
+}
 #menu_control{
     position: absolute;
    top: 0;
    left: 0;
    opacity: 0;
 }
+.d-inline-block {
+    display: inline-block;
+  }
+  /* 手寫字樣式 */
+  .typewriter span {
+    font-size: 38px;
+    overflow: hidden;
+    border-right: .3rem solid $primary;
+    color: $primary;
+    white-space: nowrap;
+    animation: 
+      typing 0.6s steps(3, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $primary }
+  }
 .menu_btn{
     width: 40px;
     height: 40px;
@@ -62,8 +98,8 @@ body{
     display: flex;
     flex-direction: column;
     transition: .5s;
-    position: relative;
     
+    position: fixed;
     
     input{
 width: 34vh;
@@ -110,7 +146,7 @@ outline: none;
     
     display: flex;
     margin: 50px 10px 50px;
-    border: 1px solid white;
+    border: 5px solid white;
     border-radius: 200px;
 }
 nav a{
@@ -201,7 +237,7 @@ i{
     
 }
 .side-menu nav::before{
-    width: 0.5px;
+    width: .5px;
     height: 100vh;
     position: absolute;
     top: 0;
@@ -348,21 +384,23 @@ margin-top: 60px;
       width: 40%;
       position: relative;
       left: 38vh;
-      height: 50%;
-      top:110vh;
+      height: 20%;
+      top:260vh;
       h3{
+          position: absolute;
+        top:-45vh;
         font-size: 42px;
         font-weight: 200;
       }
       ul{
          width: 100%;
-      
+         
        
-       font-size: 28px;
+       font-size: 36px;
         list-style: none;
         position: absolute;
         left: 280px;
-        top: 200px;
+        top: -15vh;
         p{
             font-weight: 900;
             
@@ -379,6 +417,7 @@ margin-top: 60px;
         color: white;
         width: 200px;
         position: absolute;
+        top:30vh;
         right: -350px;
         font-weight: 100;
         bottom: -400px;
@@ -392,6 +431,7 @@ margin-top: 60px;
     body{
         background-color: black;
         position: relative;
+        width: 100%;
     }
     
     .menu{
@@ -441,14 +481,8 @@ margin-top: 60px;
         box-shadow: -8px 12px 0px white, 8px -12px 0px white;
     }
     .side-menu{
-        outline: none;
-        width: 30vh;
-        height: 100%;
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        transition: .5s;
-        position: absolute;
+        display: none;
+        
         
         input{
     width: 34vh;
@@ -492,4 +526,45 @@ margin-top: 60px;
       padding: 40px;
       position: relative;
     }
+    #s1{
+        position: absolute;
+        width: 100%;
+        left: 5vh;
+        top:20vh;
+        z-index: 1;
+        
+    
     }
+    #s2{
+        color: white;
+        list-style: none;
+        position: absolute;
+        left: 5vh;
+        height: 50%;
+        top:125vh;
+        ul{
+            left: 0;
+            position: absolute;
+             width: 100%;
+             margin: auto;
+             display: block;
+             list-style: none;;
+         }
+    }
+    #s3{
+        color: white;
+        list-style: none;
+        position: absolute;
+        left: 5vh;
+        height: 50%;
+        top:305vh;
+        ul{
+            left: 0;
+            position: absolute;
+             width: 100%;
+             margin: auto;
+             display: block;
+             list-style: none;;
+         }
+    }
+}
