@@ -5,6 +5,7 @@
     
 }
 body{
+    width: 110vh;
     height: 10000px;
 }
 $primary: #81BA92   ;
@@ -27,6 +28,7 @@ html,body{
 body{
     background-color: black;
     position: relative;
+    
     
 }
 // .menu{
@@ -89,7 +91,9 @@ body{
     
     opacity: 0;
 }
-
+.home-section {
+    width: 20%;
+}
 .side-menu{
     outline: none;
     width: 30vh;
@@ -381,7 +385,7 @@ margin-top: 60px;
   #s3{
       color:#81BA92;
       
-      width: 40%;
+      width: 100vh;
       position: relative;
       left: 38vh;
       height: 20%;
@@ -418,7 +422,7 @@ margin-top: 60px;
         width: 200px;
         position: absolute;
         top:30vh;
-        right: -350px;
+        right: -300px;
         font-weight: 100;
         bottom: -400px;
         font-family: Avenir Next;
@@ -473,7 +477,7 @@ margin-top: 60px;
         border-radius: 100px;
         width: 36px;
         height: 2px;
-        left: -4px;
+        left: -10px;
         background-color: white;
         top:0;
         bottom: 0;
@@ -526,16 +530,42 @@ margin-top: 60px;
       padding: 40px;
       position: relative;
     }
+    .content_background {
+        position: relative;
+      }
+      
+      .content_background .content_b {
+        -webkit-transform: translateX(-150px);
+        right: -100px;
+        top: -200px;
+        bottom: 0;
+        margin: auto;
+        position: relative;
+        z-index: 9;
+        display: none;
+      }
+    .content_video_home video {
+        position: absolute;
+        left: 170px;
+        top: 90px;
+        width: 40%;
+        height: 60%;
+        opacity: 0.2;
+        z-index: 10;
+      }
     #s1{
         position: absolute;
-        width: 100%;
+        width: 50vh;
         left: 5vh;
         top:20vh;
         z-index: 1;
-        
+        h1{
+font-size: 40px;
+        }
     
     }
     #s2{
+        
         color: white;
         list-style: none;
         position: absolute;
@@ -550,21 +580,41 @@ margin-top: 60px;
              display: block;
              list-style: none;;
          }
+         .content_paragraph{
+             left: 250px;
+             display: none;
+         }
     }
     #s3{
+        
         color: white;
         list-style: none;
         position: absolute;
         left: 5vh;
         height: 50%;
         top:305vh;
+        width: 50vh;
         ul{
-            left: 0;
+            top:-17vh;
+            left: 20vh;
             position: absolute;
-             width: 100%;
+             width: 50%;
              margin: auto;
              display: block;
              list-style: none;;
          }
     }
+    #s3 ul li:nth-child(even) {
+        color: #81BA92;
+      }
+      #s3 .content_paragraph {
+        color:white;
+        width: 200px;
+        position: absolute;
+        top:75vh;
+        left: 260px;
+        font-weight: 100;
+        bottom: -400px;
+        font-family: Avenir Next;
+      }
 }

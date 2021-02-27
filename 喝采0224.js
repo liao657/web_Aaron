@@ -11,4 +11,12 @@ $("a").each(function (index, element) {
 
    console.log("上方:" + top)
     
+
+   $(this).click(function (e) { 
+       e.preventDefault();
+       
+       $("html").animate({
+           scrollTop:top
+       }, parseInt(duration))
+   });
 });
